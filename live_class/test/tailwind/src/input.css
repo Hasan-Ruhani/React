@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@variants hover{
+    .flag{
+        @apply bg-green-500;
+    }
+}
