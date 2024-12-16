@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="output.css">
     <title>Document</title>
 </head>
-<body class="dark:bg-gray-900 dark:text-white">
-    <button onclick="toggle()" class="hover:flag m-3 p-2 text-white bg-gray-800 rounded-md dark:text-gray-700 dark:bg-slate-400">Dark</button>
+<body class="m-[30px] dark:bg-gray-900 dark:text-white">
+    <button onclick="toggle()" class=" hover:flag m-3 p-2 text-white bg-gray-800 rounded-md dark:text-gray-700 dark:bg-slate-400">Dark</button>
     <h1 class="text-[20px] font-bold underline">Hello World!</h1>
 
     <div class="grid grid-cols-1 tab:grid-cols-2 desk:grid-cols-4">
@@ -18,10 +18,84 @@
     </div>
 
     <!-- overflow -->
-     <div class="bg-red-500 p-[10px] h-[300px] h-[300px] border border-red-500">
-        <img src="" alt="">
-     </div>
+     <div class="relative flex border border-[2px] p-2 border-purple-800 w-full h-[120px] overflow-auto">
+        <div class="flex absolute">
+            <div class="m-2 p-[15px] overflow-hidden  h-[100px] w-[200px] border border-red-500">
+                <img src="https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="">
+            </div>
 
+            <div class="m-2 p-[15px] overflow-auto  h-[100px] w-[200px] border border-red-500">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, omnis blanditiis! Labore ut voluptas, adipisci sint suscipit iusto ea perspiciatis odit culpa ratione neque? Laboriosam eveniet sequi adipisci voluptatum tenetur ut alias dolorum placeat dolores illo! Quidem dolorem iusto optio velit laborum, quod non ipsam vero! Explicabo sit aliquam doloremque dolor eius omnis, rem, unde dolore eos optio quas neque aut nulla impedit. Neque, quidem. Libero, mollitia distinctio asperiores eveniet aspernatur rem quibusdam laboriosam molestiae architecto deleniti itaque pariatur nam deserunt odit molestias voluptatibus autem at cupiditate ea dolor voluptate. Facere quo excepturi voluptatem? Soluta adipisci ab doloremque ducimus pariatur.</p>
+            </div>
+            <div class="m-2 p-[15px] overflow-hidden  h-[100px] w-[200px] border border-red-500">
+                <img src="https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="">
+            </div>
+
+            <div class="m-2 p-[15px] overflow-auto  h-[100px] w-[200px] border border-red-500">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, omnis blanditiis! Labore ut voluptas, adipisci sint suscipit iusto ea perspiciatis odit culpa ratione neque? Laboriosam eveniet sequi adipisci voluptatum tenetur ut alias dolorum placeat dolores illo! Quidem dolorem iusto optio velit laborum, quod non ipsam vero! Explicabo sit aliquam doloremque dolor eius omnis, rem, unde dolore eos optio quas neque aut nulla impedit. Neque, quidem. Libero, mollitia distinctio asperiores eveniet aspernatur rem quibusdam laboriosam molestiae architecto deleniti itaque pariatur nam deserunt odit molestias voluptatibus autem at cupiditate ea dolor voluptate. Facere quo excepturi voluptatem? Soluta adipisci ab doloremque ducimus pariatur.</p>
+            </div>
+            <div class="m-2 p-[15px] overflow-hidden  h-[100px] w-[200px] border border-red-500">
+                <img src="https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="">
+            </div>
+
+            <div class="m-2 p-[15px] overflow-auto  h-[100px] w-[200px] border border-red-500">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, omnis blanditiis! Labore ut voluptas, adipisci sint suscipit iusto ea perspiciatis odit culpa ratione neque? Laboriosam eveniet sequi adipisci voluptatum tenetur ut alias dolorum placeat dolores illo! Quidem dolorem iusto optio velit laborum, quod non ipsam vero! Explicabo sit aliquam doloremque dolor eius omnis, rem, unde dolore eos optio quas neque aut nulla impedit. Neque, quidem. Libero, mollitia distinctio asperiores eveniet aspernatur rem quibusdam laboriosam molestiae architecto deleniti itaque pariatur nam deserunt odit molestias voluptatibus autem at cupiditate ea dolor voluptate. Facere quo excepturi voluptatem? Soluta adipisci ab doloremque ducimus pariatur.</p>
+            </div>
+            <div class="m-2 p-[15px] overflow-hidden  h-[100px] w-[200px] border border-red-500">
+                <img src="https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="">
+            </div>
+
+            <div class="m-2 p-[15px] overflow-auto  h-[100px] w-[200px] border border-red-500">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, omnis blanditiis! Labore ut voluptas, adipisci sint suscipit iusto ea perspiciatis odit culpa ratione neque? Laboriosam eveniet sequi adipisci voluptatum tenetur ut alias dolorum placeat dolores illo! Quidem dolorem iusto optio velit laborum, quod non ipsam vero! Explicabo sit aliquam doloremque dolor eius omnis, rem, unde dolore eos optio quas neque aut nulla impedit. Neque, quidem. Libero, mollitia distinctio asperiores eveniet aspernatur rem quibusdam laboriosam molestiae architecto deleniti itaque pariatur nam deserunt odit molestias voluptatibus autem at cupiditate ea dolor voluptate. Facere quo excepturi voluptatem? Soluta adipisci ab doloremque ducimus pariatur.</p>
+            </div>
+            <div class="m-2 p-[15px] overflow-hidden  h-[100px] w-[200px] border border-red-500">
+                <img src="https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="">
+            </div>
+
+            <div class=" m-2 p-[15px] overflow-auto  h-[100px] w-[200px] border border-red-500">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, omnis blanditiis! Labore ut voluptas, adipisci sint suscipit iusto ea perspiciatis odit culpa ratione neque? Laboriosam eveniet sequi adipisci voluptatum tenetur ut alias dolorum placeat dolores illo! Quidem dolorem iusto optio velit laborum, quod non ipsam vero! Explicabo sit aliquam doloremque dolor eius omnis, rem, unde dolore eos optio quas neque aut nulla impedit. Neque, quidem. Libero, mollitia distinctio asperiores eveniet aspernatur rem quibusdam laboriosam molestiae architecto deleniti itaque pariatur nam deserunt odit molestias voluptatibus autem at cupiditate ea dolor voluptate. Facere quo excepturi voluptatem? Soluta adipisci ab doloremque ducimus pariatur.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- z-index -->
+    <div class="relative m-2">
+        <img class="absolute h-[50px] w-[50px] border border-purple-500 border-[2px] z-30 left-0 rounded-full" src="https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="">
+        <img class="absolute h-[50px] w-[50px] border border-purple-500 border-[2px] z-20 left-[30px] rounded-full" src="https://gratisography.com/wp-content/uploads/2024/10/gratisography-cool-cat-800x525.jpg" alt="">
+        <img class="absolute h-[50px] w-[50px] border border-purple-500 border-[2px] z-10 left-[60px] rounded-full" src="https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg" alt="">
+        <div class="flex justify-center absolute h-[50px] w-[50px] border border-purple-500 border-[2px] z-0 left-[90px] rounded-full text-[25px]">+</div>
+    </div>
+
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 tab:grid-cols-6 desk:grid-cols-12 gap-[30px]">
+                <div class="col-span-3">
+                    <img class="h-[150px] w-[300px]" src="https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="">
+                </div>
+                <div class="col-span-3">
+                    <img class="h-[150px] w-[300px]" src="https://gratisography.com/wp-content/uploads/2024/10/gratisography-cool-cat-800x525.jpg" alt="">
+                </div>
+                <div class="col-span-3">
+                    <img class="h-[150px] w-[300px]" src="https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg" alt="">
+                </div>
+                <div class="col-span-3">
+                    <img class="h-[150px] w-[300px]" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1pb-qVaXaLJyJJAWV6jsx1yHQ-0iZS_PzAg&s" alt="">
+                </div>
+                <div class="col-span-3">
+                    <img class="h-[150px] w-[300px]" src="https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg" alt="">
+                </div>
+                <div class="col-span-3">
+                    <img class="h-[150px] w-[300px]" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1pb-qVaXaLJyJJAWV6jsx1yHQ-0iZS_PzAg&s" alt="">
+                </div>
+                <div class="col-span-3">
+                    <img class="h-[150px] w-[300px]" src="https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="">
+                </div>
+                <div class="col-span-3">
+                    <img class="h-[150px] w-[300px]" src="https://gratisography.com/wp-content/uploads/2024/10/gratisography-cool-cat-800x525.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+    
     <script>
         let flag = false;
         function toggle(){
