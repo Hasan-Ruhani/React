@@ -8,9 +8,24 @@
 <body class="bg-slate-200">
   
 
-  <header class="sticky top-0 bg-purple-200 shadow-md  text-center p-4 font-bold">Header</header>
+  <header class="sticky top-0 bg-purple-200 shadow-md  text-center p-4 font-bold">
+    <div class="flex items-center justify-between">
+      <!-- SVG Button on the Left -->
+      <button id="sidebar-toggle" class="flex items-center justify-center">
+        <svg className="w-10 h-10 text-purple-500 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+          <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 6h8m-8 4h12M6 14h8m-8 4h12"/>
+        </svg>        
+      </button>
+
+      <!-- Header Section Centered -->
+      <div class="flex-grow text-center">
+        <h1 class="text-xl font-bold">Header</h1>
+      </div>
+    </div>
+  </header>
+
   <div class="flex ">
-    <aside class="w-2/12 bg-gray-300 rounded-md shadow-md p-6 h-screen">
+    <aside id="sidebar" class="transform translate-x-0 transition-transform duration-300 ease-in-out w-2/12 bg-gray-300 rounded-md shadow-md px-6 h-screen">
       <div class="flex justify-between gap-3 mb-5">
         <div>
           <img class="rounded-full w-12 h-12" src="https://thumbs.dreamstime.com/b/vector-illustration-avatar-dummy-logo-collection-image-icon-stock-isolated-object-set-symbol-web-137160339.jpg" alt="">
@@ -26,7 +41,8 @@
         <li class="rounded-lg px-2 py-2 hover:bg-stone-200 hover:text-gray-700"><a class="rounded-lg" href="#">Reports</a></li>
       </ul>
     </aside>
-    <main class="flex-1 ">
+
+    <main id="main-content" class="flex-1 transition-all duration-300 ease-in-out">
       <div class="container mx-auto">
         <div class="grid sm:grid-cols-1 md:grid-cols-2 m-6 gap-6">
           <section>
@@ -145,7 +161,10 @@
               <div class="absolute top-2 right-2 bg-red-600 text-white rounded-md font-semibold px-2 py-[3px]">Feature</div>
               <div class="p-2">
                 <a href="#" class="mb-2 font-extrabold text-lg text-purple-600">Today's Sunset</a>
-                <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi porro, totam eius quisquam... </p>
+                <p id="data-content" class="text-gray-600">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi porro, totam eius quisquam
+                  <span id="" class="see-more text-blue-600 underline cursor-pointer">see more.</span>
+                </p>              
               
                 <div class="flex justify-between mt-5">
                   <div class="flex justify-between gap-3">
@@ -159,8 +178,16 @@
                     </div>
                   </div>
                   <div class="inline-flex gap-2 justify-end">
-                    <button class="px-2 rounded-md bg-purple-500 text-gray-100">Download</button>
-                    <button class="px-2 rounded-md bg-purple-500 text-gray-100">Share</button>
+                    <button class="px-2 rounded-md bg-purple-500 text-gray-100">
+                      <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 15v2a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-2m-8 1V4m0 12-4-4m4 4 4-4"/>
+                      </svg>
+                    </button>
+                    <button class="px-2 rounded-md bg-purple-500 text-gray-100">
+                      <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M7.926 10.898 15 7.727m-7.074 5.39L15 16.29M8 12a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm12 5.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm0-11a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z"/>
+                      </svg>                      
+                    </button>
                   </div>
                 </div>
 
@@ -179,8 +206,11 @@
               <div class="absolute top-2 right-2 bg-red-600 text-white rounded-md font-semibold px-2 py-[3px]">Feature</div>
               <div class="p-2">
                 <a href="#" class="mb-2 font-extrabold text-lg text-purple-600">Beautiful Bird</a>
-                <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi porro, totam eius quisquam... </p>
-              
+                <p id="data-content" class="text-gray-600">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi porro, totam eius quisquam
+                  <span id="" class="see-more text-blue-600 underline cursor-pointer">see more.</span>
+                </p>  
+
                 <div class="flex justify-between mt-5">
                   <div class="flex justify-between gap-3">
                     <div class="inline-flex flex-col items-start">
@@ -193,8 +223,16 @@
                     </div>
                   </div>
                   <div class="inline-flex gap-2 justify-end">
-                    <button class="px-2 rounded-md bg-purple-500 text-gray-100">Download</button>
-                    <button class="px-2 rounded-md bg-purple-500 text-gray-100">Share</button>
+                    <button class="px-2 rounded-md bg-purple-500 text-gray-100">
+                      <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 15v2a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-2m-8 1V4m0 12-4-4m4 4 4-4"/>
+                      </svg>
+                    </button>
+                    <button class="px-2 rounded-md bg-purple-500 text-gray-100">
+                      <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M7.926 10.898 15 7.727m-7.074 5.39L15 16.29M8 12a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm12 5.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm0-11a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z"/>
+                      </svg>                      
+                    </button>
                   </div>
                 </div>
 
@@ -213,8 +251,11 @@
               <div class="absolute top-2 right-2 bg-red-600 text-white rounded-md font-semibold px-2 py-[3px]">Feature</div>
               <div class="p-2">
                 <a href="#" class="mb-2 font-extrabold text-lg text-purple-600">Natural Lover</a>
-                <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi porro, totam eius quisquam... </p>
-              
+                <p id="data-content" class="text-gray-600">
+                  Sit amet consectetur adipisicing elit. Modi porro, totam eius quisquam
+                  <span id="" class="see-more text-blue-600 underline cursor-pointer">see more.</span>
+                </p>  
+
                 <div class="flex justify-between mt-5">
                   <div class="flex justify-between gap-3">
                     <div class="inline-flex flex-col items-start">
@@ -227,42 +268,16 @@
                     </div>
                   </div>
                   <div class="inline-flex gap-2 justify-end">
-                    <button class="px-2 rounded-md bg-purple-500 text-gray-100">Download</button>
-                    <button class="px-2 rounded-md bg-purple-500 text-gray-100">Share</button>
-                  </div>
-                </div>
-
-                <div class="flex mt-6 gap-3">
-                  <p class="inline-block bg-gray-300 font-semibold text-gray-600 text-sm rounded-[20px] px-2" >#Bird</p>
-                  <p class="inline-block bg-gray-300 font-semibold text-gray-600 text-sm rounded-[20px] px-2" >#Photography</p>
-                  <p class="inline-block bg-gray-300 font-semibold text-gray-600 text-sm rounded-[20px] px-2" >#Natarual</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="relative h-[450px] w-full border max-w-sm rounded-lg overflow-auto no-scrollbar shadow-lg bg-stone-100/20">
-              <div class="mb-2">
-                <img class="w-full h-[200px] object-cover rounded-md shadow-lg" src="https://d32m1btok6bzqh.cloudfront.net/wp-content/uploads/2024/02/Picture-2.jpg" alt="">
-              </div>
-              <div class="absolute top-2 right-2 bg-red-600 text-white rounded-md font-semibold px-2 py-[3px]">Feature</div>
-              <div class="p-2">
-                <a href="#" class="mb-2 font-extrabold text-lg text-purple-600">Let's forest</a>
-                <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi porro, totam eius quisquam... </p>
-              
-                <div class="flex justify-between mt-5">
-                  <div class="flex justify-between gap-3">
-                    <div class="inline-flex flex-col items-start">
-                      <p class=" text-gray-700 text-base leading-5">Views</p>
-                      <p class="text-gray-600">90,156</p>
-                    </div>
-                    <div class="inline-flex flex-col items-start">
-                      <p class=" text-gray-700 text-base leading-5">Downloads</p>
-                      <p class="text-gray-600">42,156</p>
-                    </div>
-                  </div>
-                  <div class="inline-flex gap-2 justify-end">
-                    <button class="px-2 rounded-md bg-purple-500 text-gray-100">Download</button>
-                    <button class="px-2 rounded-md bg-purple-500 text-gray-100">Share</button>
+                    <button class="px-2 rounded-md bg-purple-500 text-gray-100">
+                      <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 15v2a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-2m-8 1V4m0 12-4-4m4 4 4-4"/>
+                      </svg>
+                    </button>
+                    <button class="px-2 rounded-md bg-purple-500 text-gray-100">
+                      <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M7.926 10.898 15 7.727m-7.074 5.39L15 16.29M8 12a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm12 5.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm0-11a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z"/>
+                      </svg>                      
+                    </button>
                   </div>
                 </div>
 
@@ -275,6 +290,90 @@
             </div>
           </div>
         </section>
+
+        <section>
+          <div class="container mx-auto">
+            <h2 class="my-transition text-3xl font-bold text-center hover:text-4xl hover:text-red-700">Table-Transition</h2>
+            <div class="flex justify-center m-8">
+              <table id="table1" class="shadow-lg">
+                <thead>
+                  <tr>
+                    <th id="th1" class="px-6 py-3 text-left text-xs uppercase tracking-w-normal">Name</th>
+                    <th id="th1" class="px-6 py-3 text-left text-xs uppercase tracking-w-normal">Email</th>
+                    <th id="th1" class="px-6 py-3 text-left text-xs uppercase tracking-w-normal">Phone</th>
+                    <th id="th1" class="px-6 py-3 text-left text-xs uppercase tracking-w-normal">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td id="td1" class="px-6 py-4 text-left text-sm">John Doe</td>
+                    <td id="td1" class="px-6 py-4 text-left text-sm">john.doe@example.com</td>
+                    <td id="td1" class="px-6 py-4 text-left text-sm">+1 123-456-7890</td>
+                    <td id="td1" class="px-6 py-4 text-left text-sm">
+                      <button class="px-2 py-1 rounded-md bg-purple-500 text-white">Edit</button>
+                      <button class="px-2 py-1 rounded-md bg-red-500 text-white">Delete</button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td id="td1" class="px-6 py-4 text-left text-sm">John Doe</td>
+                    <td id="td1" class="px-6 py-4 text-left text-sm">john.doe@example.com</td>
+                    <td id="td1" class="px-6 py-4 text-left text-sm">+1 123-456-7890</td>
+                    <td id="td1" class="px-6 py-4 text-left text-sm">
+                      <button class="px-2 py-1 rounded-md bg-purple-500 text-white">Edit</button>
+                      <button class="px-2 py-1 rounded-md bg-red-500 text-white">Delete</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+  
+            <div class="flex justify-center m-8">
+              <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                <table class="min-w-full border-collapse border border-gray-200">
+                  <thead class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white">
+                    <tr>
+                      <th class="px-6 py-3 text-left text-sm font-semibold uppercase tracking-wider">Name</th>
+                      <th class="px-6 py-3 text-left text-sm font-semibold uppercase tracking-wider">Email</th>
+                      <th class="px-6 py-3 text-left text-sm font-semibold uppercase tracking-wider">Phone</th>
+                      <th class="px-6 py-3 text-left text-sm font-semibold uppercase tracking-wider">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-gray-200">
+                    <tr class="group transition duration-300 hover:bg-purple-300/10 ease-in-out hover:shadow-lg hover:scale-[1.02]">
+                      <td class="px-6 py-4 text-sm font-medium text-gray-700">John Doe</td>
+                      <td class="px-6 py-4 text-sm text-gray-600">john.doe@example.com</td>
+                      <td class="px-6 py-4 text-sm text-gray-600">+1 123-456-7890</td>
+                      <td class="px-6 py-4 text-sm">
+                        <button class="px-4 py-2 rounded-md bg-green-500 text-white hover:bg-green-600">Edit</button>
+                        <button class="ml-2 px-4 py-2 rounded-md bg-red-500 text-white hover:bg-red-600">Delete</button>
+                      </td>
+                    </tr>
+                    <tr class="group transition duration-300 hover:bg-purple-300/10 ease-in-out hover:shadow-lg hover:scale-[1.02]">
+                      <td class="px-6 py-4 text-sm font-medium text-gray-700">Jane Smith</td>
+                      <td class="px-6 py-4 text-sm text-gray-600">jane.smith@example.com</td>
+                      <td class="px-6 py-4 text-sm text-gray-600">+1 987-654-3210</td>
+                      <td class="px-6 py-4 text-sm">
+                        <button class="px-4 py-2 rounded-md bg-green-500 text-white hover:bg-green-600">Edit</button>
+                        <button class="ml-2 px-4 py-2 rounded-md bg-red-500 text-white hover:bg-red-600">Delete</button>
+                      </td>
+                    </tr>
+                    <tr class="group transition duration-300 hover:bg-purple-300/10 ease-in-out hover:shadow-lg hover:scale-[1.02]">
+                      <td class="px-6 py-4 text-sm font-medium text-gray-700">Jane Smith</td>
+                      <td class="px-6 py-4 text-sm text-gray-600">jane.smith@example.com</td>
+                      <td class="px-6 py-4 text-sm text-gray-600">+1 987-654-3210</td>
+                      <td class="px-6 py-4 text-sm">
+                        <button class="px-4 py-2 rounded-md bg-green-500 text-white hover:bg-green-600">Edit</button>
+                        <button class="ml-2 px-4 py-2 rounded-md bg-red-500 text-white hover:bg-red-600">Delete</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            
+          </div>
+        </section>
         
       </div>
     </main>
@@ -283,6 +382,17 @@
     <p>&copy; codeforsite</p>
   </footer>
 
+  <!-- ......................................Modal.................................. -->
+
+  <div id="modal" class="flex fixed inset-0 justify-center items-center hidden bg-gray-800 bg-opacity-20 z-50">
+    <div class="relative bg-white w-[500px] max-w-3xl rounded-lg p-5">
+        <button id="close-modal" class="absolute top-[-5px] right-[8px]">x</button>
+        <p id="modal-content"></p>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+  
 
 </body>
 </html>

@@ -2,9 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+
+}
+
 @layer utilities {
     /* Hide scrollbar for Chrome, Safari and Opera */
     .no-scrollbar::-webkit-scrollbar {
         display: none;
     }
+
+    #table1, #th1, #td1 {
+        border-collapse: separate;
+        border-radius: 5px;
+        border-spacing: 10px;
+        border: 1px solid purple;
+    }
+
+    .my-transition {
+        color: blueviolet;
+        transition: 1s ease-in-out;
+        margin: auto;
+    }
+
+    /* .my-transition:hover {
+        color: rgb(242, 41, 202);
+        size: 50px;
+    } */
 }
