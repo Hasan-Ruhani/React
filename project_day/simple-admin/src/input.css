@@ -29,4 +29,34 @@
         color: rgb(242, 41, 202);
         size: 50px;
     } */
+
+
+    .animated-btn {
+        /* width: 200px;
+        height: 50px; */
+        /* background-color: #3498db; */
+        animation-duration: 3s; /* Duration of the animation */
+        animation-timing-function: ease-in-out; /* Smooth animation */
+        animation-iteration-count: 1; /* Play animation only once */
+        animation-delay: 0s; /* No delay for immediate animation */
+        animation-fill-mode: forwards; /* Retain the final state of the animation */
+        animation-name: btn-animation; /* Define the animation name */
+      }
+      
+      @keyframes btn-animation {
+        0% {
+          transform: translateX(-100px); /* Start slightly off-screen */
+          opacity: 0; /* Fully visible at the start */
+        }
+        50% {
+          transform: translateX(0); /* Move to the original position */
+          opacity: 1; /* Maintain full visibility */
+        }
+        100% {
+          transform: translateX(0); /* End at the original position */
+          opacity: 1; /* Fade out */
+        }
+      }
+      
+      
 }
