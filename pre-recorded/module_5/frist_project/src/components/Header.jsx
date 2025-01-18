@@ -1,11 +1,16 @@
 
 const Header = () => {
+    const city = ['Dhaka', 'Khulna', 'London', 'New York', 'Rajshahi']
+
     return(
         <>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-            </ul>
+            <ol>
+                {
+                    city.map((items, i)=> {
+                        return <li key={i.toString()}>{items}</li>
+                    })
+                }
+            </ol>
         </>
     );
 }
